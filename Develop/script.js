@@ -17,49 +17,26 @@ function colorCode() {
   }
 };
 
-// Figured out how to save for first time block.  Want to be able to do this for each one wil a loop?
-// function eightOclock() {
-//   var input = document.querySelector("#text-8");
-//   var output = document.querySelector("#text-8");
-//   var save = document.querySelector("#bttn-8");
-//   save.addEventListener("click", updateOutput);
-//   input.value = localStorage.getItem("");
-//   output.textContent = localStorage.getItem("");
-  
-//   function updateOutput() {
-//     localStorage.setItem("", input.value);
-//     output.textContent = input.value;
-//   }
-// };
-// eightOclock();
-
-// function nineOclock() {
-//   var input = document.querySelector("#text-9");
-//   var output = document.querySelector("#text-9");
-//   var save = document.querySelector("#bttn-9");
-//   save.addEventListener("click", updateOutput);
-//   input.value = localStorage.getItem("");
-//   output.textContent = localStorage.getItem("");
-  
-//   function updateOutput() {
-//     localStorage.setItem("", input.value);
-//     output.textContent = input.value;
-//   }
-// };
-// nineOclock();
 
 
-// Get the value at the html element #text-8 from local storage if any?
-$("#text-8").val(localStorage.getItem("time-block"));
-
-// Know I need an on click function to setItem if the save button at a certain block is clicked..
+// Function runs when a save button is clicked. 
 $(".saveBtn").on("click", function (){
-var time = $(this).parent().attr("id");
-// Get value at "description" within my textarea tag
 var text = $(this).siblings(".description").val();
-// Save text in local storage
+var time = $(this).parent().attr("id");
 localStorage.setItem(time, text);
 });
+
+// Get the value at the html element that holds user input text from local storage if any
+$("#text-8").val(localStorage.getItem("time-block"));
+$("#text-9").val(localStorage.getItem("time-block"));
+$("#text-10").val(localStorage.getItem("time-block"));
+$("#text-11").val(localStorage.getItem("time-block"));
+$("#text-12").val(localStorage.getItem("time-block"));
+$("#text-13").val(localStorage.getItem("time-block"));
+$("#text-14").val(localStorage.getItem("time-block"));
+$("#text-15").val(localStorage.getItem("time-block"));
+$("#text-16").val(localStorage.getItem("time-block"));
+$("#text-17").val(localStorage.getItem("time-block"));
 
 
 colorCode();
