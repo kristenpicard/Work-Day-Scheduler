@@ -16,48 +16,44 @@ function colorCode() {
     }
   }
 };
-colorCode();
-
-// This creates an array of the textarea ids.
-// var array = [];
-// $('textarea').each(function(){
-//     var id = $(this).attr('id');
-//     array.push(id);
-// });
-// console.log(array);
 
 // Figured out how to save for first time block.  Want to be able to do this for each one wil a loop?
-function eightOclock() {
-  var input = document.querySelector("#text-8");
-  var output = document.querySelector("#text-8");
-  var save = document.querySelector("#bttn-8");
-  save.addEventListener("click", updateOutput);
-  input.value = localStorage.getItem("");
-  output.textContent = localStorage.getItem("");
+// function eightOclock() {
+//   var input = document.querySelector("#text-8");
+//   var output = document.querySelector("#text-8");
+//   var save = document.querySelector("#bttn-8");
+//   save.addEventListener("click", updateOutput);
+//   input.value = localStorage.getItem("");
+//   output.textContent = localStorage.getItem("");
   
-  function updateOutput() {
-    localStorage.setItem("", input.value);
-    output.textContent = input.value;
-  }
-};
-eightOclock();
+//   function updateOutput() {
+//     localStorage.setItem("", input.value);
+//     output.textContent = input.value;
+//   }
+// };
+// eightOclock();
 
-function nineOclock() {
-  var input = document.querySelector("#text-9");
-  var output = document.querySelector("#text-9");
-  var save = document.querySelector("#bttn-9");
-  save.addEventListener("click", updateOutput);
-  input.value = localStorage.getItem("");
-  output.textContent = localStorage.getItem("");
+// function nineOclock() {
+//   var input = document.querySelector("#text-9");
+//   var output = document.querySelector("#text-9");
+//   var save = document.querySelector("#bttn-9");
+//   save.addEventListener("click", updateOutput);
+//   input.value = localStorage.getItem("");
+//   output.textContent = localStorage.getItem("");
   
-  function updateOutput() {
-    localStorage.setItem("", input.value);
-    output.textContent = input.value;
-  }
-};
-nineOclock();
+//   function updateOutput() {
+//     localStorage.setItem("", input.value);
+//     output.textContent = input.value;
+//   }
+// };
+// nineOclock();
+
+
+// Get the value at the html element #text-8 from local storage if any?
+$("#text-8").val(localStorage.getItem("time-block"));
 
 
 
 
+colorCode();
 
