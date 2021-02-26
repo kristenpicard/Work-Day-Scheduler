@@ -54,7 +54,11 @@ $("#text-8").val(localStorage.getItem("time-block"));
 
 // Know I need an on click function to setItem if the save button at a certain block is clicked..
 $(".saveBtn").on("click", function (){
-
+var time = $(this).parent().attr("id");
+// Get value at "description" within my textarea tag
+var text = $(this).siblings(".description").val();
+// Save text in local storage
+localStorage.setItem(time, text);
 });
 
 
