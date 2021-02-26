@@ -52,7 +52,10 @@ function colorCode() {
 // Get the value at the html element #text-8 from local storage if any?
 $("#text-8").val(localStorage.getItem("time-block"));
 
+// Know I need an on click function to setItem if the save button at a certain block is clicked..
+$(".saveBtn").on("click", function (){
 
+});
 
 
 colorCode();
