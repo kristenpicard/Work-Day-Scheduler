@@ -27,16 +27,16 @@ localStorage.setItem(time, text);
 });
 
 // Get the value at the html element that holds user input text from local storage if any
-$("#text-8").val(localStorage.getItem("time-block"));
-$("#text-9").val(localStorage.getItem("time-block"));
-$("#text-10").val(localStorage.getItem("time-block"));
-$("#text-11").val(localStorage.getItem("time-block"));
-$("#text-12").val(localStorage.getItem("time-block"));
-$("#text-13").val(localStorage.getItem("time-block"));
-$("#text-14").val(localStorage.getItem("time-block"));
-$("#text-15").val(localStorage.getItem("time-block"));
-$("#text-16").val(localStorage.getItem("time-block"));
-$("#text-17").val(localStorage.getItem("time-block"));
+$("#text-8").val(localStorage.getItem("time-block1"));
+$("#text-9").val(localStorage.getItem("time-block2"));
+$("#text-10").val(localStorage.getItem("time-block3"));
+$("#text-11").val(localStorage.getItem("time-block4"));
+$("#text-12").val(localStorage.getItem("time-block5"));
+$("#text-13").val(localStorage.getItem("time-block6"));
+$("#text-14").val(localStorage.getItem("time-block7"));
+$("#text-15").val(localStorage.getItem("time-block8"));
+$("#text-16").val(localStorage.getItem("time-block9"));
+$("#text-17").val(localStorage.getItem("time-block10"));
 
 
 colorCode();
