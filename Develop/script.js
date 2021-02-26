@@ -42,6 +42,20 @@ function eightOclock() {
 };
 eightOclock();
 
+function nineOclock() {
+  var input = document.querySelector("#text-9");
+  var output = document.querySelector("#text-9");
+  var save = document.querySelector("#bttn-9");
+  save.addEventListener("click", updateOutput);
+  input.value = localStorage.getItem("");
+  output.textContent = localStorage.getItem("");
+  
+  function updateOutput() {
+    localStorage.setItem("", input.value);
+    output.textContent = input.value;
+  }
+};
+nineOclock();
 
 
 
