@@ -28,3 +28,15 @@ This screenshot shows the time as 3:32 pm and how the color coding appears based
 This screenshot shows the capability of the user to type in information and the save button associated:
 <br>
 ![3](Assets/3.png)
+
+## Installation
+Clone the repository at https://github.com/kristenpicard/Work-Day-Scheduler and load it on
+code editor of your choice. Vscode is the prefered editor.
+
+## Credits
+Kristen Picard https://github.com/kristenpicard
+
+
+## License
+MIT License
+![test](https://img.shields.io/apm/l/test)
